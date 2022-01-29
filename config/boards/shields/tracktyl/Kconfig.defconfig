@@ -1,20 +1,20 @@
-if SHIELD_SKELETYL_LEFT
+if SHIELD_TRACKTYL_LEFT
 
     config ZMK_KEYBOARD_NAME
-        default "Skeletyl(Left)"
+        default "Tracktyl(Left)"
 
 endif
 
-if SHIELD_SKELETYL_RIGHT
+if SHIELD_TRACKTYL_RIGHT
 
     config ZMK_KEYBOARD_NAME
-        default "Skeletyl(Right)"
+        default "Tracktyl(Right)"
 
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
         default y
 endif
 
-if SHIELD_SKELETYL_LEFT || SHIELD_SKELETYL_RIGHT
+if SHIELD_TRACKTYL_LEFT || SHIELD_TRACKTYL_RIGHT
 
     config ZMK_SPLIT
         default y
