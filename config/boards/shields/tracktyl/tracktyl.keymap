@@ -4,9 +4,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define LWR 1
-#define RSE 2
-#define ADJ 3
+#define ARWS 1
+#define NUMS 2
+#define LWR 3
 
 / {
     keymap {
@@ -31,7 +31,7 @@
                 &kp Q    &kp W    &kp E    &kp R          &kp T               &kp Y    &kp U        &kp I        &kp O   &kp P
                 &kp A    &kp S    &kp D    &kp F          &kp G               &kp H    &kp J        &kp K        &kp L   &kp SEMI
                 &kp Z    &kp X    &kp C    &kp V          &kp B               &kp N    &kp M        &kp COMMA    &kp DOT &kp FSLH
-                &kp LGUI &kp LALT &kp LCTL &mt LSHIFT TAB &kp SPACE           &kp BSPC &lt ARRS RET &lt NUMS ESC &kp DEL &kp SQT
+                &kp LGUI &kp LALT &kp LCTL &mt LSHIFT TAB &kp SPACE           &kp BSPC &lt ARWS RET &lt NUMS ESC &kp DEL &kp SQT
             >;
         };
 
