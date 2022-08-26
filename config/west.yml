@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmk
-      revision: mouse-pim447
+      revision: dracula-test
       import: app/west.yml
   self:
     path: config
