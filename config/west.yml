@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: zmk
-      url-base: https://github.com/drorchen
+    - name: zmkfirmware
+      url-base: https://github.com/ALpotato
   projects:
-    - name: zmk
-      remote: zmk
-      revision: dracula-test
+    - name: ufan-zmk
+      remote: zmkfirmware
+      revision: alpotato-ptdevice
       import: app/west.yml
   self:
     path: config
