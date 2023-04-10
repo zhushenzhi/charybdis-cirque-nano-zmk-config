@@ -1,4 +1,4 @@
-#include "tracktyl.dtsi" // Notice that the main dtsi files are included in the overlay.
+#include "charybdis_cirque.dtsi" // Notice that the main dtsi files are included in the overlay.
 
 &default_transform {
     col-offset = <0>;

@@ -1,16 +1,16 @@
-#include "tracktyl.dtsi"
+#include "charybdis_cirque.dtsi"
 
-&default_transform { // The matrix transform for this board is 6 columns over because the left half is 6 columns wide according to the matrix.
+&default_transform { // The matrix transform for this board is 5 columns over because the left half is 5 columns wide according to the matrix.
     col-offset = <5>;
 };
 
 &kscan0 {
         col-gpios
-            = <&pro_micro 16 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 14 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 15 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 18 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+            = <&pro_micro 16 GPIO_ACTIVE_HIGH> // row 5  (0,5,R)
+            , <&pro_micro 14 GPIO_ACTIVE_HIGH> // row 6  (0,6,R)
+            , <&pro_micro 15 GPIO_ACTIVE_HIGH> // row 7  (0,7,R)
+            , <&pro_micro 18 GPIO_ACTIVE_HIGH> // row 8  (0,8,R)
+            , <&pro_micro 19 GPIO_ACTIVE_HIGH> // row 9  (0,9,R)
             ;
 
         row-gpios
