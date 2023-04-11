@@ -1,14 +1,14 @@
 if SHIELD_CHARYBDIS_CIRQUE_LEFT
 
     config ZMK_KEYBOARD_NAME
-        default "Charybdis_Pad_Left"
+        default "Skeletyl_L"
 
 endif
 
 if SHIELD_CHARYBDIS_CIRQUE_RIGHT
 
     config ZMK_KEYBOARD_NAME
-        default "Charybdis_Pad_Right"
+        default "Charybdis_Cir_R"
     
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
         default y
