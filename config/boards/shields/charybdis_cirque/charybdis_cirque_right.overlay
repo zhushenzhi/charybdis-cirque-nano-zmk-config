@@ -6,11 +6,11 @@
 
 &kscan0 {
         col-gpios
-            = <&pro_micro 16 GPIO_ACTIVE_HIGH> // row 5  (0,5,R)
-            , <&pro_micro 14 GPIO_ACTIVE_HIGH> // row 6  (0,6,R)
-            , <&pro_micro 15 GPIO_ACTIVE_HIGH> // row 7  (0,7,R)
-            , <&pro_micro 18 GPIO_ACTIVE_HIGH> // row 8  (0,8,R)
-            , <&pro_micro 19 GPIO_ACTIVE_HIGH> // row 9  (0,9,R)
+            = <&pro_micro 16 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 14 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 15 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 19 GPIO_ACTIVE_HIGH>
             ;
 };
 
@@ -34,7 +34,7 @@
         cpi = <600>;
     };
 };
-*/
+
 
 &pro_micro_spi {
     status = "okay";
@@ -53,8 +53,10 @@
         scroll-layer = <5>;
     };
 };
+*/
 
 &pro_micro_spi {
+    compatible = "nordic,nrf-spim";
     status = "okay";
     miso-pin = <17>; // P0.17
     mosi-pin = <20>; // P0.20
@@ -63,7 +65,6 @@
 
     trackpad: trackpad@0 {
         compatible = "cirque,pinnacle";
-        // status = "okay";
         reg = <0>;
         label = "cirque trackpad";
         spi-max-frequency = <1000000>;
