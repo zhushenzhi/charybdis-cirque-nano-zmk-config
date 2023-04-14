@@ -14,6 +14,13 @@
             ;
 };
 
+&nice_nano_spi {
+    status = "okay";
+};
+&trackpad {
+    status = "okay";
+};
+
 /*
 &pro_micro_spi {
 	compatible = "nordic,nrf-spim";
@@ -53,7 +60,7 @@
         scroll-layer = <5>;
     };
 };
-*/
+
 
 &pro_micro_spi {
     compatible = "nordic,nrf-spim";
@@ -74,3 +81,4 @@
         // no-taps;
     };
 };
+*/
