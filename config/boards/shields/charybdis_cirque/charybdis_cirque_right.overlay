@@ -14,12 +14,12 @@
             ;
 };
 
-&nice_nano_spi {
-    status = "okay";
-};
-&trackpad {
-    status = "okay";
-};
+// &nice_nano_spi {
+//     status = "okay";
+// };
+// &trackpad {
+//     status = "okay";
+// };
 
 /*
 &pro_micro_spi {
@@ -60,9 +60,10 @@
         scroll-layer = <5>;
     };
 };
+*/
 
 
-&pro_micro_spi {
+&nice_nano_spi {
     compatible = "nordic,nrf-spim";
     status = "okay";
     miso-pin = <17>; // P0.17
@@ -72,6 +73,7 @@
 
     trackpad: trackpad@0 {
         compatible = "cirque,pinnacle";
+        status = "okay";
         reg = <0>;
         label = "cirque trackpad";
         spi-max-frequency = <1000000>;
@@ -81,4 +83,4 @@
         // no-taps;
     };
 };
-*/
+
