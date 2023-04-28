@@ -1,4 +1,4 @@
-if SHIELD_CHARYBDIS_CIRQUE_RIGHT
+if SHIELD_CHARYBDIS_CIRQUE_LEFT
 
     config ZMK_KEYBOARD_NAME
         default "Charybdis_Cir"
