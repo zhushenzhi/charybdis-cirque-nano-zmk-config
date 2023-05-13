@@ -17,10 +17,7 @@
     
 };
 
-   trackballs {
-		compatible = "zmk,keymap-trackballs";
-		trackballs = <&trackball>;
-	};
+
 
 &nice_nano_spi {
     compatible = "nordic,nrf-spim";
