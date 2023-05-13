@@ -23,16 +23,14 @@
     sck-pin = <31>; // P0.22
     cs-gpios = <&gpio0 29 GPIO_ACTIVE_LOW>; // P0.24
 
-    trackpad: trackpad@0 {
-        compatible = "cirque,pinnacle";
-        status = "okay";
+    trackball: trackball@0 {
+        status = "disabled";
+        compatible = "pixart,pmw3360";
         reg = <0>;
-        label = "cirque trackpad";
-        spi-max-frequency = <1000000>;
-        dr-gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>;
-        // invert-x;
-        sleep;
-        // no-taps;
+        label = "Pixart PMW3360";
+        irq-gpios = <&gpio0 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        spi-max-frequency = <2000000>;
+        scroll-layer = <5>;
     };
 };
 
