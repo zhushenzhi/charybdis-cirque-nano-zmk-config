@@ -180,7 +180,7 @@ modcp: mod_copy {
   &kp LC(C) &mt  LALT LC(V)  &kp BSPC  &kp SPACE                                 &kp LEFT &kp RIGHT &none &none
      &trans    &to 0 &to 0   &trans                                             &kp UP &kp DOWN &none &none
             >;
-                 trackball-bindings = <&tsl>;
+               
         };
 
         symbol_layer {
