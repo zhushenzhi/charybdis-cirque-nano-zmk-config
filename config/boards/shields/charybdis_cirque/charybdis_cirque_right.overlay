@@ -26,7 +26,3 @@
 &trackball {
     status = "okay";
 };
-
-&chosen {
-    zmk,battery = &vbatt;
-};
