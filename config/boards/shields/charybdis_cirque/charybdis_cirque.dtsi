@@ -46,18 +46,18 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 
 &nice_nano_spi {
     compatible = "nordic,nrf-spim";
-  status = "disabled";
+  status = "okay";
     miso-pin = <43>; // P0.17
     mosi-pin = <10>; // P0.20
     sck-pin = <45>; // P0.22
     cs-gpios = <&gpio0 23 GPIO_ACTIVE_LOW>; // P0.24
 
     trackball: trackball@0 {
-        status = "disabled";
+        status = "okay";
         compatible = "pixart,pmw3360";
         reg = <0>;
         label = "Pixart PMW3360";
-        irq-gpios = <&gpio0 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        irq-gpios = <&gpio1 11  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         spi-max-frequency = <2000000>;
         scroll-layer = <2>;
     };
