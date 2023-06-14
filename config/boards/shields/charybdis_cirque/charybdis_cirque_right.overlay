@@ -7,12 +7,12 @@
 &kscan0 {
     diode-direction = "col2row";
     col-gpios
-        = <&pro_micro 4 (GPIO_ACTIVE_HIGH)> // COL0 
-        , <&pro_micro 5 (GPIO_ACTIVE_HIGH)> // COL1 
-        , <&pro_micro 6 (GPIO_ACTIVE_HIGH)> // COL2 
-        , <&pro_micro 7 (GPIO_ACTIVE_HIGH)> // COL3 
-	, <&pro_micro 8 (GPIO_ACTIVE_HIGH)> // COL1 
-        , <&pro_micro 9 (GPIO_ACTIVE_HIGH)> // COL2 
+    = <&pro_micro 19 GPIO_ACTIVE_HIGH> // COL0 
+    , <&pro_micro 20 GPIO_ACTIVE_HIGH> // COL1 
+    , <&pro_micro 10 GPIO_ACTIVE_HIGH> // COL2 
+    , <&pro_micro 6 GPIO_ACTIVE_HIGH> // COL3 
+    , <&pro_micro 7 GPIO_ACTIVE_HIGH> // COL1 
+    , <&pro_micro 8 GPIO_ACTIVE_HIGH> // COL2 
     ;
 };
 // &nice_nano_spi {
@@ -27,17 +27,17 @@
 	compatible = "nordic,nrf-spim";
     status = "okay";
 
-    miso-pin = <17>; // P0.17
-    mosi-pin = <20>; // P0.20
-    sck-pin = <22>; // P0.22
-    cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>; // P0.24
+    miso-pin = <43>; // P0.17
+    mosi-pin = <10>; // P0.20
+    sck-pin = <45>; // P0.22
+    cs-gpios = <&gpio0 23 GPIO_ACTIVE_LOW>; // P0.24
 
     trackball: trackball@0 {
         compatible = "pixart,pmw33xx";
         reg = <0>;
         label = "Pixart PMW3360";
-        cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>; // P0.24
-        motswk-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>; // P1.00 = 32 + 0
+        cs-gpios = <&gpio0 23 GPIO_ACTIVE_LOW>; // P0.24
+        // motswk-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>; // P1.00 = 32 + 0
         spi-max-frequency = <10000000>;
         cpi = <600>;
     };
